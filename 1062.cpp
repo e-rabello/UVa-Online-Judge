@@ -12,8 +12,7 @@ using namespace std;
 int main() {
 
   char containers[1001];
-  int tam = 0, i = 0, j = 0, n = 0, flag = -1, k = 0;
-
+  int flag = -1,  i = 0, j = 0, k = 0, n = 0, tam = 0;
 
   while(scanf("%s", containers) != EOF) {
     if (containers[0] == 'e' && containers[1] == 'n' && containers[2] == 'd')
@@ -45,7 +44,6 @@ int main() {
     i = 0; n = 0;
     
   }
-
 
   return 0;
 }/* main */
