@@ -10,7 +10,8 @@ using namespace std;
 
 
 int main() {
-
+/* main */
+  
   char containers[1001];
   int flag = -1,  i = 0, j = 0, k = 0, n = 0, tam = 0;
 
