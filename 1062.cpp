@@ -15,14 +15,14 @@ int main() {
   char containers[1001];
   int flag = -1,  i = 0, j = 0, k = 0, n = 0, tam = 0;
 
-  while(scanf("%s", containers) != EOF) {
+  while (scanf("%s", containers) != EOF) {
     if (containers[0] == 'e' && containers[1] == 'n' && containers[2] == 'd')
       break;
     tam = strlen(containers);
     vector<char> pilhas(26, 95);
   
     /* Percorre  containers, cria pilha e empilha */
-    while(i < tam) {
+    while (i < tam) {
       flag = -1; /* flag fora do intervalo do vetor, evitar conflitos */
 
       /* Passeia pelo topo das pilhas */
@@ -32,7 +32,7 @@ int main() {
 	    flag = j;
       }
       /* "Cria pilha" */
-      if(flag == -1) {
+      if (flag == -1) {
 	flag = n;
 	n++;
       }
